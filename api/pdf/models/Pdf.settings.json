@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "pdfs",
+  "info": {
+    "name": "pdf",
+    "description": "for pdf files"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "displaytest": {
+      "default": "displaytest",
+      "unique": true,
+      "type": "text"
+    }
+  }
+}

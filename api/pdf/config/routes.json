@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pdfs",
+      "handler": "Pdf.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pdfs/count",
+      "handler": "Pdf.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pdfs/:id",
+      "handler": "Pdf.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pdfs",
+      "handler": "Pdf.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pdfs/:id",
+      "handler": "Pdf.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pdfs/:id",
+      "handler": "Pdf.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
